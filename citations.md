@@ -6,3 +6,6 @@ https://web.mit.edu/drela/Public/web/avl/
 
 xfoil:
 https://web.mit.edu/drela/Public/web/xfoil/
+
+atmospheric conditions:
+https://aerospaceweb.org/design/scripts/atmosphere/
