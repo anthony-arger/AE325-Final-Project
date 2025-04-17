@@ -4,7 +4,7 @@ WingFlap
 #IYsym   IZsym   Zsym
 0      0      0.0
 #Sref    Cref    Bref
-149.38    3.5     42.6
+149.1    3.5     42.6
 #Xref    Yref    Zref
 0.0      0.0     0.0
 #
@@ -34,7 +34,7 @@ NACA
 #-------------------------------------------------------------
 SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
-3.5       21.3   0       3.5    -1     0          0
+2     21.3   0       3.5    -1     0          0
 CONTROL                         
 flap1   1.0   0.80   0. 0. 0.   1
 NACA
