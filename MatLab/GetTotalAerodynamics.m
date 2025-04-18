@@ -37,5 +37,5 @@ end
 function [Lift] = GetWingLift(object,cond,c,b)
     % Simple function takes in the wing section C_l object and calculates
     % the lift of the wing assuming only the surface area of the main wing
-    Lift = object.C_l .* (c .* b(1) .* 2) .* cond.rho .* (cond.U_inf.^2);
+    Lift = 0.5 .* object.C_l .* (c .* b(1) .* 2) .* cond.rho .* (cond.U_inf.^2);
 end
