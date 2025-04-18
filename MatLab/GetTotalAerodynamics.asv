@@ -3,8 +3,8 @@ function [Total_Drag,Total_Lift] = GetTotalAerodynamics(Fuselage,aerodynamics,co
     Df_Fuselage = dragFuselage(Fuselage,conditions);
     Df_Aerodynamics = GetWingDrag(aerodynamics,conditions,c,b);
 
-    Total_Drag = (Df_Fuselage + Df_Aerodynamics) ./ (sqrt(1- ( (conditions.U_inf./conditions.SoS) ).^2 ));
-    Total_Lift = GetWingLift(aerodynamics,conditions,c,b) ./ (sqrt(1- ( (conditions.U_inf./conditions.SoS) ).^2 ));
+    Total_Drag = (Df_Fuselage + Df_Aerodynamics) ./ (sqrt(1- ( (conditions.U_inf./conditions.a) ).^2 ));
+    Total_Lift = GetWingLift(aerodynamics,conditions,c,b);
 end
 
 function [Drag_Fuselage] = dragFuselage(o, cond)
