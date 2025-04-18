@@ -1,5 +1,9 @@
-function [range] = RangeCalc(W,Power,conditions)
-%at cruise
-C = 0.46 %lbs/hp-h
- Range = (conditions.U_inf*W.Wi/(Pshaft*4*C))*log(Wi/W.Wf)
+function [Range] = RangeCalc(W,Ps,conditions)
+    %at cruise
+    C = 0.46; %lbs/hp-h
+    W.Wi = 250000;
+    W.Wf = 250000 - 130896;
+    conditions.U_inf = conditions.U_inf .* 2.237;
+    Range = (conditions.U_inf * W.Wi/(Ps*4*C)) * log(W.Wi/W.Wf);
+
 end
