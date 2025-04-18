@@ -9,3 +9,6 @@ https://web.mit.edu/drela/Public/web/xfoil/
 
 atmospheric conditions:
 https://aerospaceweb.org/design/scripts/atmosphere/
+
+Thrust & efficiency equations: 
+https://web.mit.edu/16.unified/www/SPRING/systems/Lab_Notes/airpower.pdf
