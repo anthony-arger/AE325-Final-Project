@@ -28,15 +28,15 @@ SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 0.0     0.0    0        1.5     0          0         0
 CONTROL                         
-flap1   1.0   0.80   0. 0. 0.   1
+flap1   1.0   0.70   0. 0. 0.   1
 NACA
 4412
 #-------------------------------------------------------------
 SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
-3.0     8.0   0       1.5    -1     0          0
+3.0     9.0   0       1.5    -1     0          0
 CONTROL                         
-flap1   1.0   0.80   0. 0. 0.   1
+flap1   1.0   0.70   0. 0. 0.   1
 NACA
 4412
 #-------------------------------------------------------------
@@ -59,7 +59,7 @@ SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 20     0.0    0.2      1.5     0          0         0
 CONTROL
-elevator   1.0   0.80   0. 0. 0.   1
+elevator   1.0   0.70   0. 0. 0.   1
 NACA
 0014
 #-------------------------------------------------------------
@@ -67,7 +67,7 @@ SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 20      4     0.2        1.5    -1     0          0
 CONTROL
-elevator  1.0   0.80   0. 0. 0.   1
+elevator  1.0   0.70   0. 0. 0.   1
 NACA
 0014
 #-------------------------------------------------------------
