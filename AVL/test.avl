@@ -34,7 +34,7 @@ NACA
 #-------------------------------------------------------------
 SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
-2     21.3   0       3.5    -1     0          0
+3.5     21.3   0       3.5    -1     0          0
 CONTROL                         
 flap1   1.0   0.80   0. 0. 0.   1
 NACA
