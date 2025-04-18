@@ -1,0 +1,41 @@
+function [Total_Drag,Total_Lift] = GetTotalAerodynamics(Fuselage,aerodynamics,conditions,c,b)
+    % Calls other functions to get total Drag and Lift
+    Df_Fuselage = dragFuselage(Fuselage,conditions);
+    Df_Aerodynamics = GetWingDrag(aerodynamics,conditions,c,b);
+
+    Total_Drag = Df_Fuselage + Df_Aerodynamics;
+    Total_Lift = GetWingLift(aerodynamics,conditions,c,b);
+end
+
+function [Drag_Fuselage] = dragFuselage(o, cond)
+    % This function calculates the drag of the Fuselage by integrating over
+    % C_f. For these conditions we have found that the aircraft will be
+    % pure turb
+
+
+    %input: two objects, one for the part, one for the atm conditions
+
+    syms x y
+
+    % skin friction coefficients for laminar and turbulent conditions 
+    cf_lam =  0.664 * cond.v^0.5 / (cond.U_inf * x)^0.5;
+    cf_turb =  0.0592 * cond.v^0.2 / (cond.U_inf*x)^0.2;
+    
+    % drag
+    Drag_Fuselage = vpa(.5 * cond.rho * cond.U_inf^2 * ( int(int(cf_turb, x, o.x1, o.x2), y, o.y1, o.y2) ) , 4 );
+
+end 
+
+function [Drag] = GetWingDrag(object,cond,c,b)
+    % Simple function takes in the wing section C_D object and calculates the
+    % total drag of the wing(s)
+    D = (object.C_d .* 0.5 .* cond.rho .* (cond.U_inf.^2) .* c) .* b .* 2;
+    Drag = sum(D);
+end
+
+
+function [Lift] = GetWingLift(object,cond,c,b)
+    % Simple function takes in the wing section C_l object and calculates
+    % the lift of the wing assuming only the surface area of the main wing
+    Lift = object.C_l .* (c .* b(1) .* 2) .* cond.rho .* (cond.U_inf.^2);
+end
