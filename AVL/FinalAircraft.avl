@@ -4,7 +4,7 @@ WingFlap
 #IYsym   IZsym   Zsym
 0      0      0.0
 #Sref    Cref    Bref
-27       1.5     18
+40       2     20
 #Xref    Yref    Zref
 0.0      0.0     0.0
 #
@@ -26,7 +26,7 @@ YDUPLICATE
 #-------------------------------------------------------------
 SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
-0.0     0.0    0        1.5     0          0         0
+0.0     0.0    0        2.0     0          0         0
 CONTROL                         
 flap1   1.0   0.70   0. 0. 0.   1
 NACA
@@ -34,7 +34,7 @@ NACA
 #-------------------------------------------------------------
 SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
-3.0     9.0   0       1.5    -1     0          0
+1.0     10.0   0       2.0    -1     0          0
 CONTROL                         
 flap1   1.0   0.70   0. 0. 0.   1
 NACA
@@ -57,7 +57,7 @@ YDUPLICATE
 #-------------------------------------------------------------
 SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
-20     0.0    0.2      1.5     0          0         0
+20     0.0    0.2      2.0     0          0         0
 CONTROL
 elevator   1.0   0.70   0. 0. 0.   1
 NACA
@@ -65,7 +65,7 @@ NACA
 #-------------------------------------------------------------
 SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
-20      4     0.2        1.5    -1     0          0
+20      4     0.2        2.0    -1     0          0
 CONTROL
 elevator  1.0   0.70   0. 0. 0.   1
 NACA
