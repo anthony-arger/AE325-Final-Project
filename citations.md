@@ -12,3 +12,13 @@ https://aerospaceweb.org/design/scripts/atmosphere/
 
 Thrust & efficiency equations: 
 https://web.mit.edu/16.unified/www/SPRING/systems/Lab_Notes/airpower.pdf
+
+201 book (Vstall, Range)
+file:///C:/Users/lucil/OneDrive/Desktop/AEROSP%20201%20F24%20Course%20notes.pdf 
+
+235 book (fuseloge drag, compressibility factor)
+file:///C:/Users/lucil/OneDrive/Desktop/Aero325/AEROSP-325.pdf
+
+Standard Atmosphere Calculator
+https://www.digitaldutch.com/atmoscalc/
+
