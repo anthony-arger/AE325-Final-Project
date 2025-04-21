@@ -1,0 +1,38 @@
+WingFlap
+#Mach
+0.0    
+#IYsym   IZsym   Zsym
+0      0      0.0
+#Sref    Cref    Bref
+3.8    1     3.8
+#Xref    Yref    Zref
+0.0      0.0     0.0
+#
+#
+#====================================================================
+SURFACE 
+Wing 
+
+#Nchordwise  Cspace   Nspanwise   Sspace
+5           1.0      11         1.0
+#
+ANGLE
+0.0
+
+
+YDUPLICATE
+0
+
+#-------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+0.0     0.0    0        1.0     0          0         0
+NACA
+4414
+#-------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+0.0     1.9  0       1        -1     0          0
+NACA
+4414
+#-------------------------------------------------------------
