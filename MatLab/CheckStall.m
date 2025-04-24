@@ -1,7 +1,4 @@
 function [isStalling,Vstall] = CheckStall(cond,Aero, S, W)
-
-%CHECKSTALL Summary of this function goes here
-%   Detailed explanation goes here
 % S: planform area
 % W: weight of the plane
 Vstall = sqrt((2*W)/(cond.rho*S*Aero.C_l_max));
