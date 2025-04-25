@@ -1,3 +1,6 @@
+%% This function was archived because we are not able to just assume the aircraft will be at cruise at all times. 
+% We want to calculate the stall condition against our actual speed.
+
 function [cruise_spd] = CruiseSpeed(CL,CLmax, S, rho, W)
 %CRUISESPEED Summary of this function goes here
 %   Detailed explanation goes here

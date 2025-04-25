@@ -1,3 +1,5 @@
+%% This function was archived, because its how were calculating take-off speed, and seems to be written by GPT
+
 function [Vtakeoff] = TakeoffSpeed(W, rho, S, CLmax)
 %MAXTAKEOFFSPEED Summary of this function goes here
 %   Detailed explanation goes here

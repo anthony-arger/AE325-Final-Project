@@ -1,3 +1,5 @@
+%% This function was archived for heavy modification
+
 function [Total_Drag,Total_Lift] = GetTotalAerodynamics(Fuselage,aerodynamics,conditions,c,b)
     % Calls other functions to get total Drag and Lift
     Df_Fuselage = dragFuselage(Fuselage,conditions);
